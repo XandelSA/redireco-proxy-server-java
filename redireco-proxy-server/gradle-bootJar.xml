@@ -1,0 +1,19 @@
+<!-- 
+	Optional ant script to execute gradle's bootJar task without the need for specific IDE plugins
+-->
+<project name="redireco-proxy-server" default="final">
+		
+	<property name="gradle.executable" location="gradlew" />
+	<target name="init">
+		<delete dir="build" />
+	</target>
+	<target name="build" depends="init">
+		<exec executable="${gradle.executable}" dir=".">
+			<arg value="--warning-mode=all"/>
+			<arg value="bootJar" />
+		</exec>
+	</target>
+	<target name="final" depends="build">
+	</target>
+
+</project>

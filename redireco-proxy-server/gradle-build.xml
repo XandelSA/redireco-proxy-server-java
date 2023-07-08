@@ -1,0 +1,20 @@
+<!-- 
+	Optional ant script to execute gradle's build task without the need for specific IDE plugins
+-->
+<project name="redireco-proxy-server" default="final">
+		
+	<property file="build/build.properties" />
+	<property name="gradle.executable" location="gradlew" />
+	<target name="init"  description="creates the necessary folders for the build to take place">
+		<delete dir="build" />
+	</target>
+	<target name="build" depends="init">
+		<exec executable="${gradle.executable}" dir=".">
+			<arg value="--warning-mode=all"/>
+			<arg value="build" />
+		</exec>
+	</target>
+	<target name="final" depends="build">
+	</target>
+
+</project>
