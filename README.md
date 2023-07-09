@@ -24,7 +24,7 @@ There are several options available to customize the server:
 
 | Command | Description |
 | --- | --- |
-| -d,--debug | Whether to output debug information. |
-| -p,--port <arg> | Optional. The port this proxy server listens on. Default is 8765. |
-| -u,--url <arg> | Optional. The hard-coded URL this proxy server forwards to. If set then url-param will be ignored. Default is null. |
-| -up,--url-param <arg> | Optional. The request parameter that contains the URL to forward to. Default is 'url'. |
+| -d,--debug | Optional. Whether to output debug information. |
+| -p,--port \<arg\> | Optional. The port this proxy server listens on. Default is `8765`. |
+| -u,--url \<arg\> | Optional. The hard-coded URL this proxy server forwards to. If set then url-param will be ignored. Default is `null`. |
+| -up,--url-param \<arg\> | Optional. The request parameter that contains the URL to forward to. Default is `url`. |
