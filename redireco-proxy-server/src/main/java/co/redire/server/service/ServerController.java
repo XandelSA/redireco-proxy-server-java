@@ -44,6 +44,7 @@ public class ServerController {
 			HttpHeaders.TE.toUpperCase(),
 			HttpHeaders.TRAILER.toUpperCase(),
 			HttpHeaders.TRANSFER_ENCODING.toUpperCase(),
+			HttpHeaders.USER_AGENT.toUpperCase(),
 			HttpHeaders.UPGRADE.toUpperCase(),
 			HttpHeaders.VIA.toUpperCase(),
 	};
