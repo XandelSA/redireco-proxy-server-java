@@ -1,3 +1,4 @@
+###########
 # Project #
 ###########
 
@@ -5,6 +6,7 @@ build/
 *-test/
 classes/
 .gradle/
+gradle.properties
 .classpath
 
 #######################################################
